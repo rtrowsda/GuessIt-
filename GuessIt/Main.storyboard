@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JTS-mX-XyD"/>
+                        <viewControllerLayoutGuide type="bottom" id="w9g-eT-eNf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29c-pB-MEX" image="Images/home.png">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HiI-mC-07N" misplaced="YES">
+                                <rect key="frame" x="369" y="145" width="100" height="30"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Tile Game">
+                                            <attributes>
+                                                <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                                <font key="NSFont" name="MarkerFelt-Thin" family="Marker Felt" size="24"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="kfV-BI-gie" kind="modal" id="lLV-Fe-dFz" modalTransitionStyle="crossDissolve"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="1560" firstAttribute="width" constant="100"/>
+                                    <constraint id="1561" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVR-GZ-Wmf" misplaced="YES">
+                                <rect key="frame" x="103" y="145" width="91" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Bull's Eye">
+                                            <attributes>
+                                                <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                                <font key="NSFont" name="MarkerFelt-Thin" family="Marker Felt" size="24"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="TRS-6S-rKS" kind="modal" id="X0Q-eB-DOG" modalTransitionStyle="crossDissolve" modalPresentationStyle=""/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="1547" firstAttribute="width" constant="91"/>
+                                    <constraint id="1548" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdV-78-l5L" misplaced="YES" shadowOffsetHeight="0">
+                                <rect key="frame" x="137" y="31" width="305" height="66"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Choose Your Game!">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="36"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <constraints>
+                                    <constraint id="404" firstAttribute="width" secondItem="VdV-78-l5L" secondAttribute="height" multiplier="305:66"/>
+                                </constraints>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="1557" firstItem="fVR-GZ-Wmf" firstAttribute="top" secondItem="VdV-78-l5L" secondAttribute="bottom" constant="51"/>
+                            <constraint id="1562" firstItem="HiI-mC-07N" firstAttribute="top" secondItem="VdV-78-l5L" secondAttribute="bottom" constant="51"/>
+                            <constraint id="1816" firstItem="29c-pB-MEX" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom"/>
+                            <constraint id="1817" firstItem="29c-pB-MEX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing"/>
+                            <constraint id="1819" firstItem="29c-pB-MEX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="1820" firstItem="29c-pB-MEX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
+                            <constraint id="1825" firstItem="29c-pB-MEX" firstAttribute="centerX" secondItem="fVR-GZ-Wmf" secondAttribute="centerX" constant="135"/>
+                            <constraint id="1828" firstItem="HiI-mC-07N" firstAttribute="centerX" secondItem="29c-pB-MEX" secondAttribute="centerX" constant="135"/>
+                            <constraint id="1835" firstItem="VdV-78-l5L" firstAttribute="centerX" secondItem="29c-pB-MEX" secondAttribute="centerX" constant="5"/>
+                            <constraint id="1836" firstItem="29c-pB-MEX" firstAttribute="centerY" secondItem="VdV-78-l5L" secondAttribute="centerY" constant="96"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uNj-qe-0nC"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="193"/>
+        </scene>
+        <!--Bulls Eye View Controller-->
+        <scene sceneID="ls7-qp-o9W">
+            <objects>
+                <viewController id="TRS-6S-rKS" customClass="BullsEyeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sfb-MF-2Sa"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Jk-BZ-j9M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jNi-o2-hgd">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WAV-FW-RO7" image="Images/Bull_Background.png">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="kM3-b7-Mkm" misplaced="YES">
+                                <rect key="frame" x="72" y="145" width="427" height="31"/>
+                                <connections>
+                                    <action selector="Attempt:" destination="TRS-6S-rKS" id="50" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="1509" firstItem="kM3-b7-Mkm" firstAttribute="height" constant="31"/>
+                                    <constraint id="1510" firstItem="kM3-b7-Mkm" firstAttribute="width" constant="427"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-Hm-o9J">
+                                <rect key="frame" x="89.5" y="11" width="391" height="66"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Put The Bull's Eye As Close As You Can To">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Thin" family="Marker Felt" size="24"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1522" firstItem="jJi-Hm-o9J" firstAttribute="height" constant="66"/>
+                                    <constraint id="1523" firstItem="jJi-Hm-o9J" firstAttribute="width" constant="391"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYR-F6-9TV">
+                                <rect key="frame" x="214.5" y="75" width="157" height="56"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="999">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Thin" family="Marker Felt" size="24"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="3" height="1"/>
+                                <constraints>
+                                    <constraint id="1519" firstItem="HYR-F6-9TV" firstAttribute="height" constant="56"/>
+                                    <constraint id="1520" firstItem="HYR-F6-9TV" firstAttribute="width" constant="157"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ue-Qg-8NQ" misplaced="YES">
+                                <rect key="frame" x="179" y="259" width="119" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="9999">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="24"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="687" firstAttribute="width" constant="119"/>
+                                    <constraint id="688" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQi-Xe-FQx">
+                                <rect key="frame" x="412" y="259" width="87" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="99">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="24"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="606" firstAttribute="width" constant="87"/>
+                                    <constraint id="607" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-47-B69" misplaced="YES" hasAttributedTitle="YES">
+                                <rect key="frame" x="23" y="270" width="41" height="30"/>
+                                <connections>
+                                    <action selector="DismissView:" destination="TRS-6S-rKS" id="46" eventType="touchUpInside"/>
+                                </connections>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Home">
+                                            <attributes>
+                                                <font key="NSFont" name="MarkerFelt-Thin" family="Marker Felt" size="17"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbd-EX-v0b" misplaced="YES">
+                                <rect key="frame" x="105" y="258" width="69" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Score:">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="24"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="626" firstAttribute="width" constant="69"/>
+                                    <constraint id="627" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNg-L2-rtt">
+                                <rect key="frame" x="514" y="276" width="22" height="22"/>
+                                <connections>
+                                    <action selector="ShowHelp:" destination="TRS-6S-rKS" id="1635" eventType="touchUpInside"/>
+                                </connections>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4D-Kv-Zjh">
+                                <rect key="frame" x="348" y="258" width="62" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Level:">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="24"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="610" firstAttribute="width" constant="62"/>
+                                    <constraint id="611" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="43" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2">
+                                <rect key="frame" x="98" y="174" width="214" height="76"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="To Level Up You Need ">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="24"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <constraints>
+                                    <constraint id="1259" firstAttribute="height" constant="76"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="45" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                                <rect key="frame" x="355" y="198" width="96" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="9999">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="24"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <constraints>
+                                    <constraint id="1242" firstAttribute="width" constant="96"/>
+                                    <constraint id="1243" firstAttribute="height" constant="27"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1161" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="12" y="38" width="52" height="241"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1189" firstAttribute="width" constant="52"/>
+                                    <constraint id="1190" firstAttribute="height" constant="241"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1163" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="507" y="29" width="52" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1185" firstAttribute="width" constant="52"/>
+                                    <constraint id="1186" firstAttribute="height" constant="240"/>
+                                </constraints>
+                            </label>
+                            <webView contentMode="scaleToFill" id="1786" translatesAutoresizingMaskIntoConstraints="NO" hidden="YES">
+                                <rect key="frame" x="118" y="20" width="333" height="240"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <constraints>
+                                    <constraint id="1794" firstItem="1786" firstAttribute="height" constant="240"/>
+                                    <constraint id="1795" firstItem="1786" firstAttribute="width" constant="333"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="605" firstItem="jNi-o2-hgd" firstAttribute="bottom" secondItem="JQi-Xe-FQx" secondAttribute="bottom" constant="40"/>
+                            <constraint id="609" firstItem="jNi-o2-hgd" firstAttribute="bottom" secondItem="c4D-Kv-Zjh" secondAttribute="bottom" constant="41"/>
+                            <constraint id="612" firstItem="JQi-Xe-FQx" firstAttribute="leading" secondItem="c4D-Kv-Zjh" secondAttribute="trailing" constant="2"/>
+                            <constraint id="625" firstItem="jNi-o2-hgd" firstAttribute="bottom" secondItem="zbd-EX-v0b" secondAttribute="bottom" constant="41"/>
+                            <constraint id="629" firstItem="1mN-47-B69" firstAttribute="leading" secondItem="jNi-o2-hgd" secondAttribute="leading" constant="23"/>
+                            <constraint id="630" firstItem="jNi-o2-hgd" firstAttribute="bottom" secondItem="1mN-47-B69" secondAttribute="bottom" constant="20"/>
+                            <constraint id="669" firstItem="jNi-o2-hgd" firstAttribute="trailing" secondItem="QNg-L2-rtt" secondAttribute="trailing" constant="32"/>
+                            <constraint id="670" firstItem="jNi-o2-hgd" firstAttribute="bottom" secondItem="QNg-L2-rtt" secondAttribute="bottom" constant="22"/>
+                            <constraint id="671" firstItem="QNg-L2-rtt" firstAttribute="leading" secondItem="JQi-Xe-FQx" secondAttribute="trailing" constant="15"/>
+                            <constraint id="674" firstItem="zbd-EX-v0b" firstAttribute="leading" secondItem="1mN-47-B69" secondAttribute="trailing" constant="41"/>
+                            <constraint id="686" firstItem="jNi-o2-hgd" firstAttribute="bottom" secondItem="9ue-Qg-8NQ" secondAttribute="bottom" constant="40"/>
+                            <constraint id="689" firstItem="9ue-Qg-8NQ" firstAttribute="leading" secondItem="zbd-EX-v0b" secondAttribute="trailing" constant="5"/>
+                            <constraint id="1183" firstItem="jNi-o2-hgd" firstAttribute="trailing" secondItem="1163" secondAttribute="trailing" constant="9"/>
+                            <constraint id="1184" firstItem="1163" firstAttribute="top" secondItem="jNi-o2-hgd" secondAttribute="top" constant="29"/>
+                            <constraint id="1187" firstItem="1161" firstAttribute="leading" secondItem="jNi-o2-hgd" secondAttribute="leading" constant="12"/>
+                            <constraint id="1188" firstItem="1161" firstAttribute="top" secondItem="jNi-o2-hgd" secondAttribute="top" constant="38"/>
+                            <constraint id="1244" firstItem="1163" firstAttribute="leading" secondItem="45" secondAttribute="trailing" constant="56"/>
+                            <constraint id="1245" firstItem="c4D-Kv-Zjh" firstAttribute="top" secondItem="45" secondAttribute="bottom" constant="33"/>
+                            <constraint id="1260" firstItem="43" firstAttribute="leading" secondItem="1161" secondAttribute="trailing" constant="34"/>
+                            <constraint id="1261" firstItem="9ue-Qg-8NQ" firstAttribute="top" secondItem="43" secondAttribute="bottom" constant="9"/>
+                            <constraint id="1263" firstItem="45" firstAttribute="leading" secondItem="43" secondAttribute="trailing" constant="43"/>
+                            <constraint id="1475" firstItem="WAV-FW-RO7" firstAttribute="top" secondItem="jNi-o2-hgd" secondAttribute="top"/>
+                            <constraint id="1476" firstItem="WAV-FW-RO7" firstAttribute="trailing" secondItem="jNi-o2-hgd" secondAttribute="trailing"/>
+                            <constraint id="1477" firstItem="WAV-FW-RO7" firstAttribute="bottom" secondItem="jNi-o2-hgd" secondAttribute="bottom"/>
+                            <constraint id="1478" firstItem="WAV-FW-RO7" firstAttribute="leading" secondItem="jNi-o2-hgd" secondAttribute="leading"/>
+                            <constraint id="1507" firstItem="kM3-b7-Mkm" firstAttribute="centerX" secondItem="WAV-FW-RO7" secondAttribute="centerX" constant="1"/>
+                            <constraint id="1508" firstItem="kM3-b7-Mkm" firstAttribute="bottom" secondItem="43" secondAttribute="top" constant="2"/>
+                            <constraint id="1517" firstItem="HYR-F6-9TV" firstAttribute="centerX" secondItem="WAV-FW-RO7" secondAttribute="centerX" constant="9"/>
+                            <constraint id="1518" firstItem="kM3-b7-Mkm" firstAttribute="top" secondItem="HYR-F6-9TV" secondAttribute="bottom" constant="14"/>
+                            <constraint id="1521" firstItem="jJi-Hm-o9J" firstAttribute="centerX" secondItem="WAV-FW-RO7" secondAttribute="centerX" constant="1"/>
+                            <constraint id="1524" firstItem="jJi-Hm-o9J" firstAttribute="bottom" secondItem="HYR-F6-9TV" secondAttribute="top" constant="2"/>
+                            <constraint id="1792" firstItem="WAV-FW-RO7" firstAttribute="centerY" secondItem="1786" secondAttribute="centerY" constant="20"/>
+                            <constraint id="1793" firstItem="1786" firstAttribute="centerX" secondItem="WAV-FW-RO7" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iZU-sr-cEt"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="Lscore" destination="9ue-Qg-8NQ" id="name-outlet-9ue-Qg-8NQ"/>
+                        <outlet property="Llevel" destination="JQi-Xe-FQx" id="name-outlet-JQi-Xe-FQx"/>
+                        <outlet property="Ltarget" destination="HYR-F6-9TV" id="name-outlet-HYR-F6-9TV"/>
+                        <outlet property="LlevelUp" destination="45" id="name-outlet-45"/>
+                        <outlet property="slider" destination="kM3-b7-Mkm" id="name-outlet-kM3-b7-Mkm"/>
+                        <outlet property="IVbackground" destination="WAV-FW-RO7" id="name-outlet-WAV-FW-RO7"/>
+                        <outlet property="WebView1" destination="1786" id="name-outlet-1786"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sta-Tv-Ejc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="451"/>
+        </scene>
+        <!--Info View Controller-->
+        <!--Tile View Controller-->
+        <scene sceneID="ZhE-H8-sWo">
+            <objects>
+                <viewController id="kfV-BI-gie" customClass="TileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d2b-Hl-T8t"/>
+                        <viewControllerLayoutGuide type="bottom" id="DWB-S5-ITn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9lT-5F-wks">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YTg-Qh-YHX" image="Images/Tile_Background.png">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="25" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="75" y="26" width="416" height="220"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <connections>
+                                    <segue destination="27" kind="embed" id="26"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="1428" firstItem="25" firstAttribute="height" constant="220"/>
+                                    <constraint id="1429" firstItem="25" firstAttribute="width" constant="416"/>
+                                </constraints>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sba-Gt-iSd" numberOfLines="2">
+                                <rect key="frame" x="134" y="251" width="318" height="62"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Choose a Tile to Start!">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="MarkerFelt-Wide" family="Marker Felt" size="24"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1501" firstItem="sba-Gt-iSd" firstAttribute="height" constant="62"/>
+                                    <constraint id="1502" firstItem="sba-Gt-iSd" firstAttribute="width" constant="318"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oV-N3-oK7" buttonType="detailDisclosure">
+                                <rect key="frame" x="526" y="278" width="22" height="22"/>
+                                <connections>
+                                    <action selector="ShowHideInfo:" destination="kfV-BI-gie" id="1645" eventType="touchUpInside"/>
+                                </connections>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZP-iG-Odf" hasAttributedTitle="YES" misplaced="YES">
+                                <rect key="frame" x="20" y="270" width="41" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <connections>
+                                    <action selector="UIButton1mN47B69_TouchUpInside:" destination="TRS-6S-rKS" eventType="touchUpInside" id="DAO-W9-AAx"/>
+                                    <action selector="DismissView:" destination="kfV-BI-gie" id="36" eventType="touchUpInside"/>
+                                </connections>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Home">
+                                            <attributes>
+                                                <font key="NSFont" name="MarkerFelt-Thin" family="Marker Felt" size="17"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="1354" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="15" y="111" width="40" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1457" firstAttribute="width" constant="40"/>
+                                    <constraint id="1458" firstAttribute="height" constant="49"/>
+                                </constraints>
+                            </label>
+                            <webView contentMode="scaleToFill" id="1787" translatesAutoresizingMaskIntoConstraints="NO" hidden="YES">
+                                <rect key="frame" x="122" y="20" width="321" height="240"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <constraints>
+                                    <constraint id="1798" firstItem="1787" firstAttribute="height" constant="240"/>
+                                    <constraint id="1799" firstItem="1787" firstAttribute="width" constant="321"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="892" firstItem="9lT-5F-wks" firstAttribute="bottom" secondItem="gZP-iG-Odf" secondAttribute="bottom" constant="20"/>
+                            <constraint id="893" firstItem="gZP-iG-Odf" firstAttribute="leading" secondItem="9lT-5F-wks" secondAttribute="leading" constant="20"/>
+                            <constraint id="897" firstItem="9lT-5F-wks" firstAttribute="bottom" secondItem="4oV-N3-oK7" secondAttribute="bottom" constant="20"/>
+                            <constraint id="898" firstItem="9lT-5F-wks" firstAttribute="trailing" secondItem="4oV-N3-oK7" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1455" firstItem="1354" firstAttribute="leading" secondItem="9lT-5F-wks" secondAttribute="leading" constant="15"/>
+                            <constraint id="1456" firstItem="1354" firstAttribute="top" secondItem="9lT-5F-wks" secondAttribute="top" constant="111"/>
+                            <constraint id="1485" firstItem="YTg-Qh-YHX" firstAttribute="trailing" secondItem="9lT-5F-wks" secondAttribute="trailing"/>
+                            <constraint id="1486" firstItem="YTg-Qh-YHX" firstAttribute="top" secondItem="9lT-5F-wks" secondAttribute="top"/>
+                            <constraint id="1487" firstItem="YTg-Qh-YHX" firstAttribute="leading" secondItem="9lT-5F-wks" secondAttribute="leading"/>
+                            <constraint id="1488" firstItem="YTg-Qh-YHX" firstAttribute="bottom" secondItem="9lT-5F-wks" secondAttribute="bottom"/>
+                            <constraint id="1489" firstItem="25" firstAttribute="top" secondItem="d2b-Hl-T8t" secondAttribute="bottom" constant="6"/>
+                            <constraint id="1490" firstItem="YTg-Qh-YHX" firstAttribute="centerX" secondItem="25" secondAttribute="centerX" constant="1"/>
+                            <constraint id="1499" firstItem="sba-Gt-iSd" firstAttribute="centerX" secondItem="YTg-Qh-YHX" secondAttribute="centerX" constant="9"/>
+                            <constraint id="1500" firstItem="YTg-Qh-YHX" firstAttribute="bottom" secondItem="sba-Gt-iSd" secondAttribute="bottom" constant="7"/>
+                            <constraint id="1796" firstItem="YTg-Qh-YHX" firstAttribute="centerX" secondItem="1787" secondAttribute="centerX" constant="1"/>
+                            <constraint id="1797" firstItem="YTg-Qh-YHX" firstAttribute="centerY" secondItem="1787" secondAttribute="centerY" constant="20"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="WebView1" destination="1787" id="name-outlet-1787"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vJ-vm-rkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="-138"/>
+        </scene>
+        <scene sceneID="28">
+            <objects>
+                <viewController id="27" sceneMemberID="viewController" customClass="TileGameViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="23"/>
+                        <viewControllerLayoutGuide type="bottom" id="24"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="29">
+                        <rect key="frame" x="0.0" y="0.0" width="416" height="220"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                        <subviews/>
+                    </view>
+                    <toolbarItems/>
+                    <connections/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="-225"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers/>
+    <resources>
+        <image name="Images/nobomb.png" width="40" height="40"/>
+        <image name="Images/SliderThumb-Highlighted.png" width="37" height="37"/>
+        <image name="Images/SliderThumb-Normal.png" width="37" height="37"/>
+        <image name="Images/tile.png" width="40" height="40"/>
+        <image name="Images/bomb.png" width="40" height="40"/>
+        <image name="Images/myImage.png" width="4320" height="3240"/>
+        <image name="Images/home.png" width="1240" height="696"/>
+        <image name="Images/splash.png" width="2208" height="1242"/>
+        <image name="Images/Bull_Background.png" width="1136" height="640"/>
+        <image name="Images/Tile_Background.png" width="4320" height="3240"/>
+    </resources>
+</document>
