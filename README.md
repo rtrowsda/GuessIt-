@@ -9,3 +9,4 @@ Some of the features of this game are
     - Each game will load previously saved games, or start a new game and save when the screen is exited.
     
 To run this application you will need to download the repo, ensure that the files are set up in the general architecture that xamarin uses and then run the solution and the application
+File version history is avaliable in the log of the solution, under the version control tab; this is because i had a problem updating my original github repo
