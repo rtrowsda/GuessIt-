@@ -1,0 +1,9 @@
+﻿<Properties StartupItem="GuessIt/GuessIt.csproj">
+  <MonoDevelop.Ide.ItemProperties.GuessIt PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E2FA5624-DB3F-41EA-A758-99D4D5AF98A4" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
